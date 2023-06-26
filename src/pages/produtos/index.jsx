@@ -1,5 +1,5 @@
 import React from 'react'
-import Lista from '../cadastro/Lista'
+import Lista from './Lista'
 
 function Produtos() {
     return(

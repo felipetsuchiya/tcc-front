@@ -4,6 +4,7 @@ import Cadastro from "../pages/cadastro"
 import Dashboard from "../pages/dashboard"
 import Produtos from "../pages/produtos";
 import CadastroProdutos from "../pages/cadastro/CadastroProdutos";
+import CadastroHistorico from "../pages/cadastro/CadastroHistorico/index.jsx";
 
 function Router() {
     return (
@@ -13,9 +14,9 @@ function Router() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/cadastro" element={<Cadastro />}> 
                     <Route path="addprodutos" element={<CadastroProdutos />} />
+                    <Route path="addhistorico" element={<CadastroHistorico />} />
                 </Route>
                 <Route path="/produtos" element={<Produtos />} />
-
             </Routes>
         </BrowserRouter>
     )

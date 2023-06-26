@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { AiFillDelete, AiFillEdit } from 'react-icons/ai'
-import EditItemModal from '../../../components/editmodal';
+import { AiFillDelete } from 'react-icons/ai'
+import EditItemModal from '../../../components/editmodal/index';
 
 function Lista() {
 
@@ -39,10 +39,10 @@ function Lista() {
     const navigate = useNavigate();
 
     return (
-        <div className='pt-20 flex justify-center'>
+        <div className='pt-20 flex justify-center ml-64'>
             <table className='w-1/2 m-10 text-sm text-left text-gray-500 dark:text-gray-400'>
-                <thead className='text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
-                    <tr>
+                <thead className='text-lg text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+                    <tr className='space-x-10'>
                         <th>Nome</th>
                         <th>Marca</th>
                         <th>Descricao</th>
@@ -52,7 +52,7 @@ function Lista() {
                         <th>Opcoes</th>
                     </tr>
                 </thead>
-                <tbody className='text-lg'>
+                <tbody className='text-base'>
                     {produtos.map((prod) => (
                         <tr key={prod.id}>
                             <td>{prod.nome}</td>

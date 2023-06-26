@@ -32,7 +32,7 @@ function Home() {
     }, []);
 
     return (
-        <div className='flex flex-col items-center pt-20'>
+        <div className='flex flex-col items-center pt-20 pl-64'>
             <h1 className='text-3xl'> Bem-vindo a YohoSystem </h1>
             <DataGrid csv={csv} />
         </div>
