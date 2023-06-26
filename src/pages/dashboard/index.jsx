@@ -51,7 +51,7 @@ function Dashboard() {
       </div>
 
       <div className="mt-20 space-y-5 space-x-5 flex justify-center items-center">
-        <div className="border-2 p-5 rounded-lg border-black bg-indigo-50">
+        <div className="border-2 p-5 rounded-3xl border-black bg-indigo-50">
           <div className="text-center text-2xl font-medium py-2">Ganho/Mes - 2022</div>
           <PieChart chartData={userData} />
         </div>

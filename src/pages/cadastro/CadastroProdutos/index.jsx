@@ -19,13 +19,11 @@ function CadastroProdutos() {
             const newProduto = { nome, marca, descricao, tamanho, sabor };
             const response = await axios.post(`${URL}/produtos`, newProduto);
             console.log(response.data);
-            navigate('/cadastro/addprodutos')
+            navigate('/produtos')
         } catch (error) {
             console.log(error)
         }
     }
-
-    
 
     const handleNomeChange = (event) => {
         setNome(event.target.value);
@@ -72,7 +70,6 @@ function CadastroProdutos() {
                 </div>
                 <button className='w-96 p-5 text-xl border-2 border-black rounded-md font-semibold' onClick={createProduto}>Criar Produto</button>
             </div>
-
         </div>
     )
 }

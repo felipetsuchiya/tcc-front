@@ -18,11 +18,9 @@ function App() {
 
   return (
     <>
-      <div className='p-5 w-full bg-gray-800 fixed text-white text-2xl'>
+      <div className='p-5 w-full bg-gray-800 h-24 fixed text-white text-2xl'>
         <Sidebar />
       </div>
-
-
       <Router />
     </>
   );
